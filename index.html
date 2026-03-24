@@ -1,9 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Metadata goes here -->
+    <title>Alana Howard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Visible content goes here -->
+    <header class="banner" role="banner">
+      <div class="banner-left banner-inner">
+        <div class="banner-overlay" aria-hidden="false">
+            <h1 class="banner-title-html">Alana Howard</h1>
+            <p class="banner-subtitle-html">A Portfolio of Art, Games, and Graphic Design</p>
+        </div>
+        <img src="Images/logo.png" alt="Site logo" class="banner-logo"/>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success p-2 text-white bg-opacity-50">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artworks.html">Artworks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="designs.html">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Images/alana-howard-resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content">
+      <div class="container mt-4 mb-4 content-card content-with-footer">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <img src="Images/main-personal-photo.jpg" alt="Image of Alana Howard" class="personal-photo"/>
+          </div>
+          <div class="col-md-6">
+            <h2>About</h2>
+            <p>I am an avid consumer of anything related to video games and digital art.</p>
+            <p>I am currently in my second year of GIMM (Games, Interactive Media, and Mobile) from Boise State University where I have
+              gained experience in game development with unity, 3D modeling, and web development. 
+            </p>
+            <p>I have been doing digital art for six years and ended up participating in artfight for the last two years. It is a skill
+              that I have invested the most time into compared to the rest of my skills. It is something I am able to give people some direction
+              and feedback on, even when I'm the one desiring it the most from others. 
+            </p>
+            <p>My artist endeavors led me to doing graphic design for my previous workplace where I used figma for everything.
+              I learned about figma through my major and needing to rework an application's UI. I reworked the UI of mobile Spotify
+              and recreating it sure had my work cut out for me but I got it done looking just like the original. 
+            </p>
+            <p>Artifacts section</p>
+            <p>After using webpagetest.org or Google Analytics, implement and document at least 2 improvements</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer visible" role="contentinfo">
+      <div class="container d-flex justify-content-between align-items-center gap-3">
+          <a id="backHome" class="btn btn-outline-light" href="Index.html">Home</a>
+          <div class="social d-flex align-items-center gap-3">
+              <span class="text-light small">Follow at:</span>
+              <a href="mailto:alanagrigsby03@gmail.com" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/alanahow/" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://discord.com/users/586660222979014677" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-discord"></i></a>
+              <a href="https://x.com/Wrin32" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.youtube.com/@wrin3287" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://github.com/Wrin32" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
+    </footer>
   </body>
 </html>   

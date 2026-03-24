@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alana Howard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="banner" role="banner">
+      <div class="banner-left banner-inner">
+        <div class="banner-overlay" aria-hidden="false">
+            <h1 class="banner-title-html">Alana Howard</h1>
+            <p class="banner-subtitle-html">A Portfolio of Art, Games, and Graphic Design</p>
+        </div>
+        <img src="Images/logo.png" alt="Site logo" class="banner-logo"/>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success p-2 text-white bg-opacity-50">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artworks.html">Artworks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="designs.html">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Images/alana-howard-resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content">
+      <div class="container mt-4 mb-4 content-card content-with-footer">
+        <!-- Tabs navigation -->
+        <ul class="nav nav-tabs" role="tablist" id="mainTabs">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="design-1-tab" data-bs-toggle="tab" data-bs-target="#design-1" type="button" role="tab" aria-controls="design-1" aria-selected="true">Design 1</button>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+                <button class="nav-link" id="spatial-tab" data-bs-toggle="tab" data-bs-target="#spatial" type="button" role="tab" aria-controls="spatial" aria-selected="false">Spatial Atonement</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bardo-tab" data-bs-toggle="tab" data-bs-target="#bardo" type="button" role="tab" aria-controls="bardo" aria-selected="false">Bardo Experiment</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="dragon-tab" data-bs-toggle="tab" data-bs-target="#dragon" type="button" role="tab" aria-controls="dragon" aria-selected="false">Dragon Project</button>
+            </li> -->
+        </ul>
+
+        <div class="tab-content mt-3" id="mainTabContent">
+            <div class="tab-pane fade show active" id="design-1" role="tabpanel" aria-labelledby="design-1-tab">
+                <div class="container mt-4">
+                    <p class="construction">This section is under construction.</p>
+                    <img src="Images/frog.png" class="img-fluid" alt="Frog">
+                </div>
+            </div>
+
+            <div class="modal fade" id="imageModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative">
+                            <!-- Left Arrow -->
+                            <button id="prevBtn" class="nav-btn left">&#10094;</button>
+                            <!-- Image -->
+                            <img id="modalImg" class="img-fluid modal-img">
+                            <!-- Right Arrow -->
+                            <button id="nextBtn" class="nav-btn right">&#10095;</button>
+                            <p id="modalCaption" class="text-white mt-3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer visible" role="contentinfo">
+      <div class="container d-flex justify-content-between align-items-center gap-3">
+          <a id="backHome" class="btn btn-outline-light" href="Index.html">Home</a>
+          <div class="social d-flex align-items-center gap-3">
+              <span class="text-light small">Follow at:</span>
+              <a href="mailto:alanagrigsby03@gmail.com" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/alanahow/" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://discord.com/users/586660222979014677" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-discord"></i></a>
+              <a href="https://x.com/Wrin32" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.youtube.com/@wrin3287" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://github.com/Wrin32" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
+    </footer>
+
+    <script>
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        const modalImg = document.getElementById("modalImg");
+        const modalCaption = document.getElementById("modalCaption");
+
+        let currentIndex = 0;
+
+        // Convert NodeList to array
+        const images = Array.from(galleryItems);
+
+        // Open modal
+        galleryItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            currentIndex = index;
+            showImage();
+
+            const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+            modal.show();
+        });
+        });
+
+        // Show image function
+        function showImage() {
+        const img = images[currentIndex].querySelector("img");
+
+        modalImg.style.opacity = 0;
+
+        setTimeout(() => {
+            modalImg.src = img.src;
+            modalCaption.innerText = images[currentIndex].dataset.caption;
+            modalImg.style.opacity = 1;
+        }, 150);
+
+        preloadImages();
+        }
+
+        // Navigation
+        document.getElementById("nextBtn").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage();
+        });
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage();
+        });
+
+        // Keyboard Controls
+        document.addEventListener("keydown", (e) => {
+        const modalOpen = document.getElementById("imageModal").classList.contains("show");
+
+        if (!modalOpen) return;
+
+        if (e.key === "ArrowRight") {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage();
+        }
+
+        if (e.key === "ArrowLeft") {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage();
+        }
+
+        if (e.key === "Escape") {
+            bootstrap.Modal.getInstance(document.getElementById("imageModal")).hide();
+        }
+        });
+
+        // Preload next/prev images
+        function preloadImages() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        const prevIndex = (currentIndex - 1 + images.length) % images.length;
+
+        [nextIndex, prevIndex].forEach(i => {
+            const img = new Image();
+            img.src = images[i].querySelector("img").src;
+        });
+
+        window.addEventListener("load", () => {
+        new Masonry("#gallery", {
+            itemSelector: ".gallery-item",
+            columnWidth: ".gallery-item",
+            percentPosition: true,
+            gutter: 16
+        });
+        });
+        }
+    </script>
+  </body>
+</html>   
